@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0E6F6;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #D1C4E9;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 10px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            color: #6A1B9A;
+            text-align: center;
+        }
+        .sidebar p {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #4A148C;
+            padding-left: 10px;
+        }
+        .sidebar p.active {
+            background-color: #BA68C8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .header {
+            background-color: #E1BEE7;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .header input {
+            padding: 10px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .stat {
+            background-color: #E8F5E9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        .stat h2 {
+            font-size: 36px;
+            margin: 0;
+            color: #1B5E20;
+        }
+        .stat p {
+            font-size: 18px;
+            color: #388E3C;
+        }
+        .section {
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button.cancel {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Workspace</h1>
+        <p class="active">Home</p>
+        <p>Customers</p>
+        <p>Departments</p>
+        <p>Media</p>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search in Home">
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>24</h2>
+                <p>New Customers</p>
+            </div>
+            <div class="stat">
+                <h2>434+</h2>
+                <p>Department Activity</p>
+            </div>
+            <div class="stat">
+                <h2>10TB</h2>
+                <p>Total Media Size</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CUSTOMERS</div>
+            <table>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Department ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JRYT456</td>
+                    <td>UHDSG</td>
+                    <td>JOHN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>2 GB</td>
+                </tr>
+                <tr>
+                    <td>JHSAG636</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>skadj@gmail.com</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHSA77</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>skadj@gmail.com</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KSAHKJ366</td>
+                    <td>AFEEE</td>
+                    <td>MARY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKJHD35</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KKHUASU33</td>
+                    <td>HJHGF</td>
+                    <td>CHRISSY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>500 GB</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">DEPARTMENTS</div>
+            <table>
+                <tr>
+                    <th>Department ID</th>
+                    <th>Department</th>
+                    <th>Incharge Name</th>
+                    <th>Size</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JRYT456</td>
+                    <td>UHDSG</td>
+                    <td>JOHN</td>
+                    <td>23</td>
+                    <td>2 GB</td>
+                </tr>
+                <tr>
+                    <td>JHSAG636</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>45</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHSA77</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>76</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KSAHKJ366</td>
+                    <td>AFEEE</td>
+                    <td>MARY</td>
+                    <td>87</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKJHD35</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>76</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KKHUASU33</td>
+                    <td>HJHGF</td>
+                    <td>CHRISSY</td>
+                    <td>78</td>
+                    <td>500 GB</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">MEDIA</div>
+            <p class="highlight">Audio Video Images Files</p>
+            <p class="highlight">14 TB 14 TB 14 TB 14 TB</p>
+        </div>
+    </div>
+</body>
+</html>
