@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile / About Us Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-width: 90%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile-container h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .profile-card .details {
+            margin-top: 10px;
+        }
+        .profile-card .details .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .profile-card .details .item:last-child {
+            border-bottom: none;
+        }
+        .profile-card .details .item span {
+            font-size: 16px;
+        }
+        .profile-card .details .item .value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Profile / About us page</h2>
+            <h1>B.planet</h1>
+        </div>
+        <div class="profile-container">
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture">
+                <div class="details">
+                    <div class="item">
+                        <span>Name</span>
+                        <span class="value">Rahul Kumar</span>
+                    </div>
+                    <div class="item">
+                        <span>Email</span>
+                        <span class="value">rahulkumar@gmail.com</span>
+                    </div>
+                    <div class="item">
+                        <span>Password</span>
+                        <span class="value">****</span>
+                    </div>
+                    <div class="item">
+                        <span>Phone Number</span>
+                        <span class="value">9598755687</span>
+                    </div>
+                    <div class="item">
+                        <span>Address</span>
+                        <span class="value">Patia, Bhubaneswar</span>
+                    </div>
+                    <div class="item">
+                        <span>State</span>
+                        <span class="value">Odisha</span>
+                    </div>
+                    <div class="item">
+                        <span>Zip Code</span>
+                        <span class="value">751024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

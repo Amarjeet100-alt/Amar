@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-width: 90%;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .contact-us {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .middle-header {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .middle-header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .login-container img {
+            width: 50%;
+            border-radius: 8px 0 0 8px;
+        }
+        .login-form {
+            padding: 20px;
+            width: 50%;
+        }
+        .login-form h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .login-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-form button {
+            padding: 10px;
+            background-color: #d3b7a3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-form button:hover {
+            background-color: #c1a291;
+        }
+        .login-form .signup {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .login-form .signup a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .login-form .forgot-password {
+            text-align: right;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Login in page</h2>
+            <a href="#" class="contact-us">Contact us</a>
+        </div>
+        <div class="middle-header">
+            <h1>B.planet</h1>
+        </div>
+        
+        <div class="login-container">
+            <img src="WhatsApp Image 2024-08-04 at 17.49.09.jpeg" alt="Plant Image">
+            <div class="login-form">
+                <h1>Login</h1>
+                <form>
+                    <input type="email" placeholder="Email" value="rahulkumar@gmail.com" required>
+                    <div class="forgot-password">
+                        <a href="#">Forget Password ?</a>
+                    </div>
+                    <input type="password" placeholder="Password" value="****" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup">
+                    <p>Don't have an account yet? <a href="#">Sign up for free</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
